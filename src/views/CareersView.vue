@@ -36,7 +36,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/01.jpg" alt="img">
+									<img src="/assets/images/careers/career-oportunity.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Career Opportunity
 									</h6>
@@ -49,7 +49,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/02.jpg" alt="img">
+									<img src="/assets/images/careers/proven-leadership.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Proven Leadership
 									</h6>
@@ -62,7 +62,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/03.jpg" alt="img">
+									<img src="/assets/images/careers/professional-development.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Professional Development
 									</h6>
@@ -76,7 +76,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/04.jpg" alt="img">
+									<img src="/assets/images/careers/dynamic-environment.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Dynamic Environment
 									</h6>
@@ -89,7 +89,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/05.jpg" alt="img">
+									<img src="/assets/images/careers/impactful-work.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Impactful Work
 									</h6>
@@ -102,7 +102,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/06.jpg" alt="img">
+									<img src="/assets/images/careers/work-life-balance.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Work Life Balance
 									</h6>
@@ -116,7 +116,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/07.jpg" alt="img">
+									<img src="/assets/images/careers/career-progression.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Career Progression
 									</h6>
@@ -129,7 +129,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/08.jpg" alt="img">
+									<img src="/assets/images/careers/mentorship-program.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Mentorship Program
 									</h6>
@@ -142,7 +142,7 @@
 						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/09.jpg" alt="img">
+									<img src="/assets/images/careers/graduate-scheme.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Graduate Scheme
 									</h6>
@@ -200,7 +200,7 @@
 								<div class="col-lg-6">
 									<div class="form-group has-placeholder">
 										<label for="name3355d553">Subject <span class="required">*</span></label>
-										<i class="fas fa-paperclip"></i>
+										<i class="fas fa-arrow-down"></i>
 										<select name="menu-position" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
 											<option value="Legal, Risk &amp; Quality Dept. (LRQ)">Legal, Risk &amp; Quality Dept. (LRQ)</option>
 											<option value="Integrated Facilities Dept. (IFD)">Integrated Facilities Dept. (IFD)</option>
@@ -230,8 +230,9 @@
 							<div class="row c-mb-10 c-gutter-10">
 								<div class="col-sm-12">
 									<div class="form-group has-placeholder">
-										<label for="file">Message</label>
-										<input type="file" class="form-control"></input>
+										<label for="file">CV</label>
+										<input type="file" class="form-control" @change="handleFileUpload"></input>
+										<p v-if="error" class="text-red-500">{{ error }}</p>
 									</div>
 								</div>
 							</div>
@@ -250,3 +251,28 @@
 	</section>
 
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      error: null,
+      maxSize: 10 * 1024 * 1024,
+    };
+  },
+  methods: {
+    handleFileUpload(event) {
+      this.error = null;
+      const file = event.target.files[0];
+
+      if (file) {
+        if (file.size > this.maxSize) {
+          this.error = "File too big, use smaller than 10MB";
+          event.target.value = ""; 
+          return;
+        }
+      }
+    },
+  },
+};
+</script>

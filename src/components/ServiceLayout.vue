@@ -1,20 +1,10 @@
 <template>
-  
-  <section class="page_title ds s-parallax s-pb-xl-80  s-pb-lg-100  s-pb-md-90 s-pt-md-190 s-pt-180 s-pb-60">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1>Services</h1>
-				</div>
-			</div>
-		</div>
-	</section>
 
   <section class="ls ms text-sm-left text-center s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-280 s-pb-lg-250 s-pb-md-90 s-pb-60 c-gutter-60">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-10 offset-xl-1">
-					<img class="rounded" :src="service.data?.image" alt="">
+					<!-- <img class="rounded" :src="service.data?.image" alt=""> -->
 					<div class="divider-60 hidden-below-lg"></div>
 					<div class="divider-30 hidden-above-lg"></div>
 					<h2 class="special-heading text-sm-left text-center">
@@ -72,7 +62,7 @@
 				</div>
 
 				<div class="text-center mx-auto mt-5">
-					<a :href="service.data?.brocure"
+					<a :href="service.data?.brocure" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brocure</a>
 				</div>
 			</div>

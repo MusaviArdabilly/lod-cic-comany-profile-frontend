@@ -7,7 +7,7 @@ export const services = [
       title: 'Collection & Transportation',
       description: 'Collection of waste directly from client enables immediate transfer of liabilities to CIC including emergency preparation and journey management. Transports and vehicle operators are certified and compliance to safety standards.',
       footer: 'Depending on the type and volume, waste is generally stored in containments such as bottles, drums, pails and IBCs and transported using High Bed Trailer or Hiab Trucks. Liquid or slurry waste such as waste water, waste oil and sludge can be collected directly from clients’ storage via vacuum tanker. CIC operates the fleet of transportation services in partnership with a well established logistic company that have a number of 14m³ and 28m³ Vacuum Tankers, Hiab Trucks, 20’ and 40’ Trailers as well as Heavy Lift Cranes that are readily available in Brunei Darussalam.',
-      brocure: '/assets/broduces/C&T.pdf'
+      brocure: '/assets/pdf/CIC-Collection-&-Transportation.pdf'
     }
   },
   {
@@ -37,7 +37,7 @@ export const services = [
         }
       ],
       footer: 'Based on clients’ needs and requirements for environmental and oil testing services, CIC’s expert team can advise which analysis may best suit their situation. We strive to maintain high standard laboratory services by ensuring proactive communication, consistent quality of work, and a commitment to perpetual learning.',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Laboratory-Services.pdf',
     }
   },
   {
@@ -68,7 +68,7 @@ export const services = [
         }
       ],
       footer: 'Based on clients’ needs and requirements for environmental and oil testing services, CIC’s expert team can advise which analysis may best suit their situation. We strive to maintain high standard laboratory services by ensuring proactive communication, consistent quality of work, and a commitment to perpetual learning.',
-      brocure: '/assets/brocures/WWT.pdf',
+      brocure: '/assets/pdf/CIC-Waste-Water-Treatment.pdf',
     }
   },
   {
@@ -92,7 +92,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Oily-Waste-Recovery.pdf',
     }
   },
   {
@@ -116,7 +116,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Incineration-Treatment.pdf',
     }
   },
   {
@@ -179,7 +179,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Oil-&-Gass-Services.pdf',
     }
   },
   {
@@ -204,7 +204,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Mercury-Treatment-System.pdf',
     }
   },
   {
@@ -226,29 +226,22 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-TCC.pdf',
     }
   },
   {
     path: 'oil-spill-remediation',
-    mode: 2,
+    mode: 1,
     data: {
       image: '/assets/images/services/service2.jpg',
       title: 'Oil Spill Remediation',
       description: 'An oil spill occurs when liquid petroleum or hydrocarbons are released in the environment. In the event of the onshore oil spillage incidents, we at CIC are able to provide quick and efficient oil spill emergency services while minimizing the environmental impact. Inventory of oil booms, sorbents and dispersants is readily available to be deployed such an incident occurs.',
-      thumbnail: '/assets/images/services/service-single2.jpg',
-      list: [
-        {
-          title: '',
-          items: []
-        }
-      ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Oil-Spill-Remediation.pdf',
     }
   },
   {
-    path: 'engineering-soluiton-for-crane-services',
+    path: 'engineering-solution-for-crane-services',
     mode: 2,
     data: {
       image: '/assets/images/services/service2.jpg',
@@ -286,7 +279,7 @@ export const services = [
         }
       ],
       footer: 'Recently, a joint venture was established between CIC and ALATAS on Provision of Crane Overhaul Services for 10 numbers of Favelle Favco Cranes located at Brunei Shell Petroleum’s Offshore Facilities.',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Engineering-Solution-For-Crane-Services.pdf',
     }
   },
   {
@@ -306,7 +299,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Marine-Services.pdf',
     }
   },
   {
@@ -340,7 +333,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/brocures/LS.pdf',
+      brocure: '/assets/pdf/CIC-Equipment-Rental.pdf',
     }
   },
   {
@@ -351,12 +344,12 @@ export const services = [
       title: 'Vapor Blasting',
       description: 'Also known as wet blasting, slurry blasting and liquid honing, vapor blasting is rapidly becoming the number one choice for the highest quality of surface finish. It is a safe and effective way to renew the finish of the aluminum and steel components. Vapor blasting uses a slurry of water, abrasive, inhibitors and compressed air to gently scour away years of corrosion, oxidization, and yellowed clearcoat, leaving a smooth, lustrous finish that will look great for years to come. As the process is safe and dust free other production processes can be carried out simultaneously and close to the blasting operation.  CIC is certified with ISO 9001:2015, ISO 14001:2016 and ISO 45001:2018 which covers all aspects relate to Quality, Environmental and Health & Safety management processes. While there are numerous reasons why wet or vapor blasting is preferable to dry blasting, there are two key features that produce superior results: first, the finish is achieved by flow of water borne abrasive – rather than by impact, which ensures a longer surface life; and secondly, vapor blasting is a dust free and therefore more sterile process, which is a critical factor in the re-surfacing of medical instruments. The ricochet of media is reduced due to the cushioning effect created from the water, which acts as a lubricant between the media and the component surface. As a result, the angle of the media is changed, producing a lapping effect travelling across the surface, resulting in an even satin/ polished finish.',
       footer: '',
-      brocure: '/assets/broduces/C&T.pdf'
+      brocure: '/assets/pdf/CIC-Vapor-Blasting.pdf'
     }
   },
   {
     path: 'industrial-cleaning-and-mechanical',
-    mode: 1,
+    mode: 2,
     data: {
       image: '/assets/images/services/service2.jpg',
       title: 'Industrial Cleaning & Mechanical Services',
@@ -404,7 +397,72 @@ export const services = [
         },
       ],
       footer: '',
-      brocure: '/assets/broduces/C&T.pdf'
+      brocure: '/assets/pdf/CIC-ICMS.pdf'
+    }
+  },
+  {
+    path: 'drum-and-ibc-processing',
+    mode: 2,
+    data: {
+      image: '/assets/images/services/service2.jpg',
+      title: 'Drum & IBC Processing',
+      description: 'Waste received from customers stored in drums or Intermediate Bulk Container (IBC) is extracted from the storage containers and forwarded for further treatment based on the type and volume of waste received. The used drums or IBCs are cleaned and washed using high pressure hot water and bio-friendly solvent. Once the cleaning process is completed, the drums, IBCs are inspected to ensure complete decontamination. Plastic drums and IBCs are cut up into smaller pieces and sent for recycling; whereas, the metal drums and the metal casings of IBCs are crushed and sent for recycling.',
+      list: [
+        {
+          title: 'Additional information:',
+          items: [
+            'Metal IBC cage can either be scraped or reused.',
+            'Cleaned IBCs and drums can be scraped reuse and repurpose – reuse back for waste storage, material storage or a modified contaminated waste bin.',
+          ]
+        },
+        {
+          title: 'Processing Method',
+          items: [
+            'Waste received which are stored in drums or Intermediate Bulk Containers (IBCs) is extracted from storage containers and forwarded for further treatment based on type and volume of waste received.',
+            'The used drums or IBCs are cleaned and washed using high pressure hot water and a bio-friendly solvent.',
+            'Once the cleaning process is completed, a thorough inspection is performed to ensured complete decontamination.',
+            'Plastic drums and IBCs are cut up into smaller pieces and sent for recycling whereas the metal drum and the metal casings of IBCs are crushed and sent for recycling.',
+          ]
+        },
+      ],
+      footer: '',
+      brocure: '/assets/pdf/CIC-Drum-&-IBC-Processing.pdf'
+    }
+  },
+  {
+    path: 'tank-cleaning',
+    mode: 2,
+    data: {
+      image: '/assets/images/services/service2.jpg',
+      title: 'Tank Cleaning',
+      description: 'We provide tank cleaning services compliant with the highest international health, safety and environmental standards. By utilizing advanced tank cleaning technologies and equipment, we able to resolve and provide solution to the customers. We have extensive professional experience executing tank cleaning projects of different technical complexity by improving the efficiency of tank cleaning, cost- effectiveness, minimize environmental impact, while maximize worker safety.',
+      list: [
+        {
+          title: 'Tank cleaning operations and services includes:',
+          items: [
+            'Steam Cleaning',
+            'Hydraulic Washing',
+            'Conventional Method (Man-Entry) – Final Cleaning',
+            'Desludging',
+            'Vacuum Tanker',
+            'Skips',
+          ]
+        },
+        {
+          title: 'Key Benefits (Steaming and Hydraulic Washing)',
+          items: [
+            'Non-man entry, no emission, no chemical or additional of crude used, no risk of explosion.',
+            'Minimal quantity of solid sediments to be utilized.',
+            'Almost 100% oil recovery.',
+            'Complete neutralization of pyrophoric compounds.',
+            'Increase efficiency of tank cleaning and desludging processes: cleaning and recovery performed simultaneously.',
+            'Minimal tank downtime against conventional method.',
+            'Cost effective.',
+          ]
+        },
+      ],
+      footer: '',
+      brocure: '/assets/pdf/CIC-Tank-Cleaning.pdf'
     }
   }
 ]

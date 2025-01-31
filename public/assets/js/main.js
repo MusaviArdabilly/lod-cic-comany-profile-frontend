@@ -1098,7 +1098,7 @@
 
                 $currentSlider.flexslider({
                     animation: "fade",
-                    pauseOnHover: true,
+                    pauseOnHover: false,
                     useCSS: true,
                     controlNav: dots,
                     directionNav: nav,
@@ -1107,6 +1107,7 @@
                     smoothHeight: false,
                     slideshowSpeed: speed,
                     animationSpeed: 600,
+                    animationLoop: true,
                     start: function (slider) {
                         slider.find('.intro_layers').children().css({'visibility': 'hidden'});
                         slider.find('.flex-active-slide .intro_layers').children().each(function (index) {

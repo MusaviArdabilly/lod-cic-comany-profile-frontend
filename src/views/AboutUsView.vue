@@ -109,8 +109,8 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="row isotope-wrapper masonry-layout images-grid c-mb-30" style="position: relative; height: 600px;">
-						<div class="col-xl-3 col-6  " style="position: absolute; left: 0%; top: 0px;">
+					<div class="row isotope-wrapper" style="position: relative; height: 600px;">
+						<div class="col-xl-3 col-6  ">
 							<a href="#">
 								<div class="ls p-3 text-center rounded">
 									<img src="/assets/images/facilities/hq.png" alt="">
@@ -123,7 +123,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3 col-6  " style="position: absolute; left: 66.6656%; top: 0px;">
+						<div class="col-xl-3 col-6  ">
 							<a href="#">
 								<div class="ls p-3 text-center rounded">
 									<img src="/assets/images/facilities/fac2.png" alt="">
@@ -136,7 +136,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3 col-6  " style="position: absolute; left: 33.3328%; top: 0px;">
+						<div class="col-xl-3 col-6  ">
 							<a href="#">
 								<div class="ls p-3 text-center rounded">
 									<img src="/assets/images/facilities/fac3.png" alt="">
@@ -148,7 +148,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3 col-6  " style="position: absolute; left: 0%; top: 200px;">
+						<div class="col-xl-3 col-6  ">
 							<a href="#">
 								<div class="ls p-3 text-center rounded">
 									<img src="/assets/images/facilities/fac1.png" alt="">
@@ -215,158 +215,145 @@
 
 					<div class="row isotope-wrapper masonry-layout c-mb-30" data-filters=".gallery-filters" style="position: relative; height: 829.968px;">
 
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/01.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/legal-risk.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Legal, Risk & Quality (LRQ)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Coordination and management of legal services and documentation, identification and mitigation of risks, coordination and maintenance of the Integrated Management System.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/02.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/integrated-facility.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Integrated Facility (IFD)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Focus on infrastructure and business development projects, equipment sourcing.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/03.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/itc.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Information Communication Technology (ICT)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Integration and management of the company’s digitization and communication transformation.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/04.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/corporate-service.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Corporate Services (CSD)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Accounting, reporting and office administration.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
-							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/05.jpg" alt="img">
-									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
-										Project Management (PMD)
-									</h6>
-								</div>
-								<div class="item-content">
-									<p>Project planning and execution.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
-							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/06.jpg" alt="img">
+						<div class="col-xl-4 col-sm-6 business news">
+							<div class="card-wrapper vertical-item item-gallery content-absolute text-center ds">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/operation-maintenance.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Operation and Maintenance (OMD)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Daily waste management activities including shipment scheduling, storage management, waste processing and end disposal.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/07.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/hsse.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Healthy, Safety, Security, and Environment (HSSE)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Set and maintain industrial standards for health, safety and environment for our people, customers, and stakeholders.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/08.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/supply-chain.png" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Supply Chain Managemenet (SCM)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Procurement, delivery and warehousing of materials / equipment to rendering of services within budget and time.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/09.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/laboratory.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Laboratory Services (LAB)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Waste analysis to ensure appropriate treatment and disposal methods, comply to regulatory requirements.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/03.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/Shipping.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Logistics and Shipment Services (LSS)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Waste analysis to ensure appropriate treatment and disposal methods, comply to regulatory requirements.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/02.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/sales-and-business.jpg" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Sales and Business Development (SBD)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Waste analysis to ensure appropriate treatment and disposal methods, comply to regulatory requirements.</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-sm-6 business news" style="position: absolute; left: 0%; top: 0px;">
+						<div class="col-xl-4 col-sm-6 business news">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
-								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img src="/assets/images/gallery/full/01.jpg" alt="img">
+								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
+									<img src="/assets/images/departements/human-resource.png" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										Human Resources (HR)
 									</h6>
 								</div>
-								<div class="item-content">
+								<div class="item-content item-text-hover">
 									<p>Recruitment, training and development of human capital.</p>
 								</div>
 							</div>
@@ -382,19 +369,19 @@
 		<p class="text-center">In delivering our promise, CIC is committed to further enhance our LBD program both in terms of local employment and local content.</p>
 		<div class="container">
 			<div class="d-flex flex-column align-items-center border-top mx-auto mb-5 py-3">
-				<h1 class="my-2">95%</h1>
+				<h1 class="my-2">{{ localStaffStrength }}%</h1>
 				<p>Local Staff Strength</p>
 				<p class="font-weight-bold">Goal to maintain >90% total local employment.</p>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div ref="statsSection" class="container-fluid">
 			<div class="row">
 				<div class="col-12">
 					<div class="step-gorizontal">
 						<div class="step">
 							<div class="step-number">
 								<h3>
-									26
+									{{ managerial }}
 								</h3>
 							</div>
 							<h6>
@@ -404,17 +391,17 @@
 						<div class="step">
 							<div class="step-number">
 								<h3>
-									41
+									{{ highlySkilled }}
 								</h3>
 							</div>
 							<h6>
-								Highky Skilled
+								Highly Skilled
 							</h6>
 						</div>
 						<div class="step">
 							<div class="step-number">
 								<h3>
-									125
+									{{ skilled }}
 								</h3>
 							</div>
 							<h6>
@@ -424,7 +411,7 @@
 						<div class="step">
 							<div class="step-number">
 								<h3>
-									2
+									{{ lowSkilled }}
 								</h3>
 							</div>
 							<h6>
@@ -444,3 +431,57 @@
 		</div>
 	</section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+			localStaffStrength: 0,
+			managerial: 0,
+			highlySkilled: 0,
+			skilled: 0,
+			lowSkilled: 0,
+			targetLocalStaffStrength: 95,
+			targetManagerial: 26,
+			targetHighlySkilled: 41,
+			targetSkilled: 125,
+			targetLowSkilled: 2,
+			observer: null,
+    };
+  },
+  mounted() {
+    this.observeSection();
+  },
+  methods: {
+    observeSection() {
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            this.startCounter(this.targetLocalStaffStrength, "localStaffStrength");
+            this.startCounter(this.targetManagerial, "managerial");
+            this.startCounter(this.targetHighlySkilled, "highlySkilled");
+            this.startCounter(this.targetSkilled, "skilled");
+            this.startCounter(this.targetLowSkilled, "lowSkilled");
+            this.observer.disconnect(); // Stop observing after first trigger
+          }
+        },
+        { threshold: 0.5 } // Triggers when 50% of the section is visible
+      );
+      this.observer.observe(this.$refs.statsSection);
+    },
+    startCounter(target, countVar) {
+      let start = 0;
+      let step = target / 100; // Controls speed
+      let interval = setInterval(() => {
+        start += step;
+        if (start >= target) {
+          this[countVar] = target;
+          clearInterval(interval);
+        } else {
+          this[countVar] = Math.floor(start);
+        }
+      }, 20); // Updates every 20ms for smooth effect
+    },
+  },
+};
+</script>

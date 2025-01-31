@@ -1,0 +1,36 @@
+.bg-navbar {
+	background: #0437498f !important;
+}
+
+.affix-top-wrapper {
+  background-color: transparent !important;
+}
+
+.sf-menu a {
+  font-size: 0.75rem;
+}
+
+.sf-menu > li .mega-menu li a,
+.sf-menu li > ul li a {
+  border-bottom: 1px solid #f2f5f7;
+  padding: 8px 20px 8px 0;
+  width: 100%;
+}
+
+/* use transparent in ds but we need to make it white text  */
+.page_header a {
+  color: #fff;
+}
+
+.card img {
+  filter: brightness(50%);
+}
+
+.service-v2 .service-single:hover {
+  background-color: #106b8f;
+}
+
+.service-v2 .service-single h6 {
+  font-size: 1rem;
+}
+

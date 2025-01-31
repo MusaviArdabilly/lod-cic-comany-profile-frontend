@@ -75,123 +75,127 @@
 	</section>
 
 	<section class="ds text-sm-left text-center container-px-0 c-gutter-0">
-		<div class="container-fluid">
-			<div class="row service-v2">
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-tank"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Oily Waste Revocery
-							</h5>
-						</a>
-
-						<p>Lorem ipsum dolor amet consectetur</p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-refinery"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Laboratory Services
-							</h5>
-						</a>
-
-						<p>Adipisicing elit, sed do eiusmod tempor</p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-oil"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Oil Spill Remidiation
-							</h5>
-						</a>
-
-						<p>Incididunt labore dolore magna aliqua</p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-extraction"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Incineration Treatment
-							</h5>
-						</a>
-
-						<p>Utenim adminim veniam quis nostrud </p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-oil-tanker"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Collection & Transportation
-							</h5>
-						</a>
-
-						<p>Ullamco laboris nisi ut aliquip veniam exea</p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-xl-2   ">
-					<div class="icon-box service-single with-icon layout2 ds text-center">
-						<a class="link-icon" href="service-single.html">
-							<div class="icon-styled  fs-50">
-								<i class="ico ico-pipe"></i>
-							</div>
-						</a>
-						<a href="service-single.html">
-							<h5>
-								Waste Water Treatment
-							</h5>
-						</a>
-
-						<p>Commodo conquat duis aute irure dolor</p>
-						<a class="btn btn-outline-darkgrey" href="service-single.html">
-							<i class="fas fa-chevron-right"></i>
-						</a>
-					</div>
-				</div>
-			</div>
+		<div class="d-flex flex-column flex-md-row justify-content-around service-v2 gap-4">
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/oily-waste-recovery">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-tank"></i>
+          </div>
+        </a>
+        <a href="/services/oily-waste-recovery">
+          <h6>
+            Oily Waste Revocery
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/oily-waste-recovery">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/laboratory">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-refinery"></i>
+          </div>
+        </a>
+        <a href="/services/laboratory">
+          <h6>
+            Laboratory Services
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/laboratory">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/oil-spill-remidiation">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-oil"></i>
+          </div>
+        </a>
+        <a href="/services/oil-spill-remidiation">
+          <h6>
+            Oil Spill Remidiation
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/oil-spill-remidiation">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/incineration-treatment">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-extraction"></i>
+          </div>
+        </a>
+        <a href="/services/incineration-treatment">
+          <h6>
+            Incineration Treatment
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/incineration-treatment">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/collection-and-transportation">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-oil-tanker"></i>
+          </div>
+        </a>
+        <a href="/services/collection-and-transportation">
+          <h6>
+            Collection & Transportation
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/collection-and-transportation">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/waste-water-treatment">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-pipe"></i>
+          </div>
+        </a>
+        <a href="/services/waste-water-treatment">
+          <h6>
+            Waste Water Treatment
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/waste-water-treatment">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/tank-cleaning">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-oil"></i>
+          </div>
+        </a>
+        <a href="/services/tank-cleaning">
+          <h6>
+            Tank Cleaning 
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/tank-cleaning">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+			<div class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" href="/services/drum-and-ibc-processing">
+          <div class="icon-styled  fs-50">
+            <i class="ico ico-extraction"></i>
+          </div>
+        </a>
+        <a href="/services/drum-and-ibc-processing">
+          <h6>
+            Drum & IBC Processing 
+          </h6>
+        </a>
+        <a class="btn btn-outline-darkgrey" href="/services/drum-and-ibc-processing">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
 		</div>
 	</section>
 
@@ -325,18 +329,17 @@
 		</div>
 	</section>
 
-	<section class="ds call-to-action text-center  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60">
+	<section class="ls main-testimonial s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h2 class="special-heading text-center">
-						<span class="text-capitalize big">
-							All for Good. Good for All.
-						</span>
-					</h2>
-					<div class="divider-45 hidden-below-lg"></div>
-					<div class="divider-30 hidden-above-lg"></div>
-					<a class="btn btn-darkgrey big-btn" href="blog-right.html">go to blog</a>
+				<div class="col-12 text-center">
+					<h6 class="special-heading text-center">
+						“To be a trusted market leader in the conversion of recovered waste product to energy and byproducts through minimizing landfill and delivery of innovative solutions.”
+					</h6>
+					<p class="mt-4">
+						~ Vision Statement ~
+					</p>
+					<p><strong>Daniel Wong,</strong> Managing Director</p>
 				</div>
 			</div>
 		</div>

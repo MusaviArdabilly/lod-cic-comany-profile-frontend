@@ -70,62 +70,21 @@
   </section>
   <section class="ds ms s-pt-xl-160 s-pb-xl-280 s-pt-lg-130 s-pb-lg-250 s-py-md-90 s-py-60">
     <div class="bubbles"></div>
-    <div class="container">
-      <div class="row align-items-center">
+      <div class="d-flex justify-content-center p-4 mt-5">
+        <a href="https://wa.me/+6737180657" class="btn btn-success d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #fff;"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
+          <h6 class="my-0 ml-2">Contact us on Whatsapp</h6>
+        </a>
+      </div>
+    <div class="container py-5">
+      <div class="row align-items-stretch mb-5">
         <div class="col-lg-6">
-          <div class="ms small-map page_map" data-draggable="false" data-scrollwheel="false">
-            <div class="marker">
-              <div class="marker-address">sydney, australia, Liverpool street, 66</div>
-              <div class="marker-title">Reach Us</div>
-              <div class="marker-description">
-
-                <ul class="list-unstyled">
-                  <li>
-                    <span class="icon-inline">
-                      <span class="icon-styled color-main">
-                        <i class="fa fa-map-marker"></i>
-                      </span>
-
-                      <span>
-                        Sydney, Australia, Liverpool street, 66
-                      </span>
-                    </span>
-                  </li>
-
-                  <li>
-                    <span class="icon-inline">
-                      <span class="icon-styled color-main">
-                        <i class="fa fa-phone"></i>
-                      </span>
-
-                      <span>
-                        1 (800) 123-45-67
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="icon-inline">
-                      <span class="icon-styled color-main">
-                        <i class="fa fa-envelope"></i>
-                      </span>
-
-                      <span>
-                        <a href="https://html.modernwebtemplates.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365b575f5a76534e575b465a531855595b">[email&#160;protected]</a>
-                      </span>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <img class="marker-icon" src="/assets/images/map_marker_icon.png" alt="">
-            </div>
-          </div>
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7954.044488334722!2d114.215871!3d4.590031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3218abe4709e684b%3A0xdd44cf7ffccb4ce2!2sCIC%20Environmental%20Services%20Sdn%20Bhd!5e0!3m2!1sid!2sid!4v1738296312630!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
         </div>
         <div class="col-lg-6 contact-us animate" data-animation="scaleAppear">
           <div class="fw-divider-space divider-60 divider-lg-0"></div>
           <div class="form-wrapper ls rounded">
-            <form class="contact-form" method="post" action="https://html.modernwebtemplates.com/">
+            <form class="contact-form" method="post" action="https://cic.lodemo.id/">
               <div class="row c-mb-20">
                 <div class="col-12 form-title text-center form-builder-item">
                   <div class="header title">
