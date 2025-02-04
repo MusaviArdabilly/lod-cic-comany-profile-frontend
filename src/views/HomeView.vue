@@ -84,7 +84,7 @@
         </a>
         <a href="/services/oily-waste-recovery">
           <h6>
-            Oily Waste Revocery
+            Oily Waste Recovery
           </h6>
         </a>
         <a class="btn btn-outline-darkgrey" href="/services/oily-waste-recovery">
@@ -112,9 +112,9 @@
             <i class="ico ico-oil"></i>
           </div>
         </a>
-        <a href="/services/oil-spill-remidiation">
+        <a href="/services/oil-spill-remediation">
           <h6>
-            Oil Spill Remidiation
+            Oil Spill Remediation
           </h6>
         </a>
         <a class="btn btn-outline-darkgrey" href="/services/oil-spill-remidiation">
@@ -157,9 +157,9 @@
             <i class="ico ico-pipe"></i>
           </div>
         </a>
-        <a href="/services/waste-water-treatment">
+        <a href="/services/water-waste-treatment">
           <h6>
-            Waste Water Treatment
+            Water Waste Treatment
           </h6>
         </a>
         <a class="btn btn-outline-darkgrey" href="/services/waste-water-treatment">

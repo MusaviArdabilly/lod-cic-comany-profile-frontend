@@ -179,7 +179,7 @@ export const services = [
         }
       ],
       footer: '',
-      brocure: '/assets/pdf/CIC-Oil-&-Gass-Services.pdf',
+      brocure: '/assets/pdf/CIC-Oil-&-Gas-Services.pdf',
     }
   },
   {
@@ -279,7 +279,7 @@ export const services = [
         }
       ],
       footer: 'Recently, a joint venture was established between CIC and ALATAS on Provision of Crane Overhaul Services for 10 numbers of Favelle Favco Cranes located at Brunei Shell Petroleum’s Offshore Facilities.',
-      brocure: '/assets/pdf/CIC-Engineering-Solution-For-Crane-Services.pdf',
+      brocure: '/assets/pdf/CIC-Engineering-Solutions-For-Crane-Services.pdf',
     }
   },
   {

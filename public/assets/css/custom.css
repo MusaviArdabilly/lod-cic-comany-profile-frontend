@@ -22,7 +22,13 @@
   color: #fff;
 }
 
+.card {
+  height: 250px;
+}
+
 .card img {
+  height: 100%;
+  width: auto;
   filter: brightness(50%);
 }
 

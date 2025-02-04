@@ -200,7 +200,7 @@
 					</div>
 				</div>
 				<div class="text-center">
-					<a href="https://web.archive.org/web/20240617211408/http://cicgrp.com/wp-download/CIC%20eWMS.pdf"
+					<a href="/assets/pdf/CIC-eWMS.pdf" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brocure</a>
 				</div>
 			</div>
