@@ -1087,98 +1087,98 @@
         //////////////
         //flexslider//
         //////////////
-        if ($().flexslider) {
-            var $introSlider = $(".page_slider .flexslider");
-            $introSlider.each(function (index) {
-                var $currentSlider = $(this);
-                var data = $currentSlider.data();
-                var nav = (data.nav !== 'undefined') ? data.nav : true;
-                var dots = (data.dots !== 'undefined') ? data.dots : true;
-                var speed = (data.speed !== 'undefined') ? data.speed : 7000;
+        // if ($().flexslider) {
+        //     var $introSlider = $(".page_slider .flexslider");
+        //     $introSlider.each(function (index) {
+        //         var $currentSlider = $(this);
+        //         var data = $currentSlider.data();
+        //         var nav = (data.nav !== 'undefined') ? data.nav : true;
+        //         var dots = (data.dots !== 'undefined') ? data.dots : true;
+        //         var speed = (data.speed !== 'undefined') ? data.speed : 7000;
 
-                $currentSlider.flexslider({
-                    animation: "fade",
-                    pauseOnHover: false,
-                    useCSS: true,
-                    controlNav: dots,
-                    directionNav: nav,
-                    prevText: "",
-                    nextText: "",
-                    smoothHeight: false,
-                    slideshowSpeed: speed,
-                    animationSpeed: 600,
-                    animationLoop: true,
-                    start: function (slider) {
-                        slider.find('.intro_layers').children().css({'visibility': 'hidden'});
-                        slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
-                            var self = $(this);
-                            var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
-                            setTimeout(function () {
-                                self.addClass("animated " + animationClass);
-                            }, index * 250);
-                        });
-                        //////////////////////////////////////////
-                        var current= $('li:has(.flex-active)').index('.flex-control-nav li')+1;
+        //         $currentSlider.flexslider({
+        //             animation: "fade",
+        //             pauseOnHover: false,
+        //             useCSS: true,
+        //             controlNav: dots,
+        //             directionNav: nav,
+        //             prevText: "",
+        //             nextText: "",
+        //             smoothHeight: false,
+        //             slideshowSpeed: speed,
+        //             animationSpeed: 600,
+        //             animationLoop: true,
+        //             start: function (slider) {
+        //                 slider.find('.intro_layers').children().css({'visibility': 'hidden'});
+        //                 slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
+        //                     var self = $(this);
+        //                     var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
+        //                     setTimeout(function () {
+        //                         self.addClass("animated " + animationClass);
+        //                     }, index * 250);
+        //                 });
+        //                 //////////////////////////////////////////
+        //                 var current= $('li:has(.flex-active)').index('.flex-control-nav li')+1;
 
-                        var length=$('.slides li').length;
+        //                 var length=$('.slides li').length;
 
-                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
-
-
+        //                 $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
 
 
 
 
-                    },
-                    after: function (slider) {
-                        slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
-                            var self = $(this);
-                            var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
-                            setTimeout(function () {
-                                self.addClass("animated " + animationClass);
-                            }, index * 250);
-                        });
-                        //////////////////////////////////////////
-                        var current= $('li:has(.flex-active)').index('.flex-control-nav li')+1;
 
-                        var length=$('.slides li').length;
 
-                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
-                    },
-                    end: function (slider) {
-                        slider.find('.intro_layers').children().each(function () {
-                            var self = $(this);
-                            var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
-                            self.removeClass('animated ' + animationClass).css({'visibility': 'hidden'});
-                            // $(this).attr('class', '');
-                        });
-                    },
+        //             },
+        //             after: function (slider) {
+        //                 slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
+        //                     var self = $(this);
+        //                     var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
+        //                     setTimeout(function () {
+        //                         self.addClass("animated " + animationClass);
+        //                     }, index * 250);
+        //                 });
+        //                 //////////////////////////////////////////
+        //                 var current= $('li:has(.flex-active)').index('.flex-control-nav li')+1;
 
-                })
-                //wrapping nav with container - uncomment if need
-                // .find('.flex-control-nav')
-                // .wrap('<div class="container nav-container"/>')
-            }); //.page_slider flex slider
+        //                 var length=$('.slides li').length;
 
-            $(".flexslider").each(function (index) {
-                var $currentSlider = $(this);
-                //exit if intro slider already activated
-                if ($currentSlider.find('.flex-active-slide').length) {
-                    return;
-                }
-                $currentSlider.flexslider({
-                    animation: "fade",
-                    useCSS: true,
-                    controlNav: true,
-                    directionNav: false,
-                    prevText: "",
-                    nextText: "",
-                    smoothHeight: false,
-                    slideshowSpeed: 5000,
-                    animationSpeed: 800,
-                })
-            });
-        }
+        //                 $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
+        //             },
+        //             end: function (slider) {
+        //                 slider.find('.intro_layers').children().each(function () {
+        //                     var self = $(this);
+        //                     var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
+        //                     self.removeClass('animated ' + animationClass).css({'visibility': 'hidden'});
+        //                     // $(this).attr('class', '');
+        //                 });
+        //             },
+
+        //         })
+        //         //wrapping nav with container - uncomment if need
+        //         // .find('.flex-control-nav')
+        //         // .wrap('<div class="container nav-container"/>')
+        //     }); //.page_slider flex slider
+
+        //     $(".flexslider").each(function (index) {
+        //         var $currentSlider = $(this);
+        //         //exit if intro slider already activated
+        //         if ($currentSlider.find('.flex-active-slide').length) {
+        //             return;
+        //         }
+        //         $currentSlider.flexslider({
+        //             animation: "fade",
+        //             useCSS: true,
+        //             controlNav: true,
+        //             directionNav: false,
+        //             prevText: "",
+        //             nextText: "",
+        //             smoothHeight: false,
+        //             slideshowSpeed: 5000,
+        //             animationSpeed: 800,
+        //         })
+        //     });
+        // }
 
         ////////////////
         //owl carousel//
@@ -2073,4 +2073,3 @@
     });
 //end of IIFE function
 })(jQuery);
-

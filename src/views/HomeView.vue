@@ -1,198 +1,53 @@
 <template>
+	<!-- <img :src="`https://cms.cic.lodemo.id${singleSliders?.image?.formats?.large?.url}`" alt="asd"> -->
 	<section class="page_slider">
 		<div class="flexslider">
 			<ul class="slides">
-				<li class="ds cover-image">
-					<img src="/assets/images/slide01.jpg" alt="img">
+				<li v-if="heroSliders" v-for="(slider, index) in heroSliders" :key="index" class="ds cover-image"
+						:style="{
+						backgroundImage: `url('https://cms.cic.lodemo.id${slider?.image?.formats?.large?.url}')`,
+						backgroundSize: 'cover',
+						backgroundPosition: 'center'
+					}">
+					<img :src="`https://cms.cic.lodemo.id${slider?.image?.formats?.large?.url}`" :alt="slider.title">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="intro_layers_wrapper">
 									<div class="intro_layers">
 										<div class="intro_layer">
-											<h6 class="intro_before_featured_word">Specializing in hydrocarbon</h6>
+											<h6 class="intro_before_featured_word">{{ slider.title }}</h6>
 											<h2 class="text-capitalize intro_featured_word">
-												and hazardous waste management for the O&G and non-O&G industries
+												{{ slider.description }}
 											</h2>
-											<!-- <a href="#" class="btn btn-outline-darkgrey big-btn">get a quote</a>
-											<span class="text-divider">or</span>
-											<a href="#" class="btn just-link">Request a Callback</a> -->
 										</div>
-									</div> <!-- eof .intro_layers -->
-								</div> <!-- eof .intro_layers_wrapper -->
-							</div> <!-- eof .col-* -->
-						</div><!-- eof .row -->
-					</div><!-- eof .container-fluid -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</li>
-				<li class="ds cover-image">
-					<img src="/assets/images/slide02.jpg" alt="img">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="intro_layers_wrapper">
-									<div class="intro_layers">
-										<div class="intro_layer">
-											<h6 class="intro_before_featured_word">Circular Ecosystem</h6>
-											<h2 class="text-capitalize intro_featured_word">
-												Closing the loop by repurposing organic waste
-											</h2>
-											<!-- <a href="#" class="btn btn-outline-darkgrey big-btn">get a quote</a>
-											<span class="text-divider">or</span>
-											<a href="#" class="btn just-link">Request a Callback</a> -->
-										</div>
-									</div> <!-- eof .intro_layers -->
-								</div> <!-- eof .intro_layers_wrapper -->
-							</div> <!-- eof .col-* -->
-						</div><!-- eof .row -->
-					</div><!-- eof .container-fluid -->
-				</li>
-				<li class="ds cover-image">
-					<img src="/assets/images/slide03.jpg" alt="img">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="intro_layers_wrapper">
-									<div class="intro_layers">
-										<div class="intro_layer">
-											<h6 class="intro_before_featured_word">Environmental evolution</h6>
-											<h2 class="text-capitalize intro_featured_word">
-												for a better tomorrow
-											</h2>
-											<!-- <a href="#" class="btn btn-outline-darkgrey big-btn">get a quote</a>
-											<span class="text-divider">or</span>
-											<a href="#" class="btn just-link">Request a Callback</a> -->
-										</div>
-									</div> <!-- eof .intro_layers -->
-								</div> <!-- eof .intro_layers_wrapper -->
-							</div> <!-- eof .col-* -->
-						</div><!-- eof .row -->
-					</div><!-- eof .container-fluid -->
-				</li>
-
-
 			</ul>
-		</div> <!-- eof flexslider -->
+		</div>
 	</section>
 
 	<section class="ds text-sm-left text-center container-px-0 c-gutter-0">
 		<div class="d-flex flex-column flex-md-row justify-content-around service-v2 gap-4">
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/oily-waste-recovery">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-tank"></i>
+			<div v-for="(item, index) in highlightServices" :key="index"
+				class="icon-box service-single with-icon layout2 ds text-center">
+        <a class="link-icon" :href="item.url">
+          <div v-if="item.icon"
+						class="icon-styled  fs-50">
+            <!-- <img :src="`https://cms.cic.lodemo.id${item.icon.icon_source.url}`" alt=""> -->
+						<i :class="item.icon.class"></i>
           </div>
         </a>
-        <a href="/services/oily-waste-recovery">
+        <a :href="item.url">
           <h6>
-            Oily Waste Recovery
+            {{ item.title }}
           </h6>
         </a>
-        <a class="btn btn-outline-darkgrey" href="/services/oily-waste-recovery">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/laboratory">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-refinery"></i>
-          </div>
-        </a>
-        <a href="/services/laboratory">
-          <h6>
-            Laboratory Services
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/laboratory">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/oil-spill-remidiation">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-oil"></i>
-          </div>
-        </a>
-        <a href="/services/oil-spill-remediation">
-          <h6>
-            Oil Spill Remediation
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/oil-spill-remidiation">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/incineration-treatment">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-extraction"></i>
-          </div>
-        </a>
-        <a href="/services/incineration-treatment">
-          <h6>
-            Incineration Treatment
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/incineration-treatment">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/collection-and-transportation">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-oil-tanker"></i>
-          </div>
-        </a>
-        <a href="/services/collection-and-transportation">
-          <h6>
-            Collection & Transportation
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/collection-and-transportation">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/waste-water-treatment">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-pipe"></i>
-          </div>
-        </a>
-        <a href="/services/water-waste-treatment">
-          <h6>
-            Water Waste Treatment
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/waste-water-treatment">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/tank-cleaning">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-oil"></i>
-          </div>
-        </a>
-        <a href="/services/tank-cleaning">
-          <h6>
-            Tank Cleaning 
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/tank-cleaning">
-          <i class="fas fa-chevron-right"></i>
-        </a>
-      </div>
-			<div class="icon-box service-single with-icon layout2 ds text-center">
-        <a class="link-icon" href="/services/drum-and-ibc-processing">
-          <div class="icon-styled  fs-50">
-            <i class="ico ico-extraction"></i>
-          </div>
-        </a>
-        <a href="/services/drum-and-ibc-processing">
-          <h6>
-            Drum & IBC Processing 
-          </h6>
-        </a>
-        <a class="btn btn-outline-darkgrey" href="/services/drum-and-ibc-processing">
+        <a class="btn btn-outline-darkgrey" :href="item.url">
           <i class="fas fa-chevron-right"></i>
         </a>
       </div>
@@ -204,126 +59,69 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<h6 class="special-heading text-center">
-						“We will do our very best to conserve the limited energy resources through oil recycling for sustainable developments to make this earth a pleasant place to live in.”
+						“{{ missionStatement.quote }}”
 					</h6>
 					<p class="mt-4">
-						~ Mission Statement ~
+						~ {{ missionStatement.title }} ~
 					</p>
-					<p><strong>Shaiful Arief Dato Paduka Haji Abdul Razak,</strong> CEO</p>
+					<p><strong>{{ missionStatement.name }},</strong> {{ missionStatement.position }}</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
-		<div class="cover-image s-cover-right">
-			<img src="/assets/images/services/service2.jpg" alt="01">
+		<div class="cover-image s-cover-right" 
+			:style="{
+				backgroundImage: `url('https://cms.cic.lodemo.id${pageBanner?.image?.url}')`
+			}">
+			<img :src="`https://cms.cic.lodemo.id${pageBanner?.image?.url}`" alt="01">
 		</div>
 
 		<div class="container-fluid">
 			<div class="row">
-
 				<div class="col-xs-12 col-12 col-lg-6">
 					<div class="content-center">
 						<h2 class="special-heading text-sm-left text-center">
 							<span class="text-capitalize">
-								CIC Environmental Services Sdn Bhd (CIC)
+								{{ pageBanner?.title }}
 							</span>
 						</h2>
 						<div class="divider-45 hidden-below-lg"></div>
 						<div class="divider-30 hidden-above-lg"></div>
 						<p>
-							is a local incorporated company  specializing in hydrocarbon and hazardous Waste Management Services (WMS) to oil and gas industry in Brunei Darussalam.
+							{{ pageBanner?.description }}
 						</p>
-						
 					</div>
 				</div>
 				<div class="col-xs-12 col-12 col-lg-6">
-
-
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="s-overlay infinity-section s-py-60 text-center">
-		<img src="/assets/images/infinity-1.png" alt="">
-		<h2>Waste Management System</h2>
+	<section class="s-overlay infinity-section s-py-60 text-center px-3">
+		<img :src="`https://cms.cic.lodemo.id${infinity?.image?.url}`" alt="">
+		<h2>{{ WMS.title }}</h2>
 		<div class="container wms-card-container mb-5 p-0">
 			<div class="row gap-1">
-				<div class="col-6 col-md-3 mb-3">
+				<div v-for="(service, index) in WMS.section_6a" :key="index" 
+					class="col-6 col-md-3 mb-3">
 					<div class="wms-card">
-						<img src="/assets/images/incineration-treatment.png" alt="">
-						<h6>Incineration Treatment</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/laboratory-services.png" alt="">
-						<h6>Laboratory Services</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/drum&ibc.jpg" alt="">
-						<h6>Drum & IBC Processing</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/collection&transporting.webp" alt="">
-						<h6>Collection & Transportation</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/oily-waste.jpg" alt="">
-						<h6>Oily Waste Recovery</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/waste-water.jpg" alt="">
-						<h6>Waste Water Treatment</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/tank-cleaning.webp" alt="">
-						<h6>Tank Cleaning</h6>
-					</div>
-				</div>
-				<div class="col-6 col-md-3 mb-3">
-					<div class="wms-card">
-						<img src="/assets/images/oil-spill.webp" alt="">
-						<h6>Oil Spill Remidiation</h6>
+						<img :src="`https://cms.cic.lodemo.id${service?.image.url}`" alt="">
+						<h6>{{ service?.title }}</h6>
 					</div>
 				</div>
 			</div>
 		</div>
-		<h2>eWMS</h2>
+		<h2>{{ eWMS?.title }}</h2>
 		<div class="container">
-			<p>Our integrated Waste Management System streamlines waste management and related activities by automating the waste management workflow, reducing inefficiencies and potential for human error.</p>
+			<p>{{ eWMS?.description }}</p>
 			<div class="d-flex flex-wrap flex-md-nowrap justify-content-center ewms-container">
-				<div class="ewms-card mx-2 py-4">
-					<h5>Safety</h5>
-					<p>Mitigate risks when handling hazardous waste.</p>
-				</div>
-				<div class="ewms-card mx-2 py-4">
-					<h5>Compliance</h5>
-					<p>Ensure compliance with regulatory requirements.</p>
-				</div>
-				<div class="ewms-card mx-2 py-4">
-					<h5>Documentation</h5>
-					<p>Ensure complete documentation is readily available & accessible.</p>
-				</div>
-				<div class="ewms-card mx-2 py-4">
-					<h5>Reporting</h5>
-					<p>MTrack metrics related to waste type, location & originator.</p>
-				</div>
-				<div class="ewms-card mx-2 py-4">
-					<h5>analysis</h5>
-					<p>Analyse trends and easily share with stakeholders.</p>
+				<div v-for="(item, index) in eWMS.section_7a" :key="index"
+					class="ewms-card mx-2 py-4">
+					<h5>{{ item.title }}</h5>
+					<p>{{ item.description }}</p>
 				</div>
 			</div>
 		</div>
@@ -334,14 +132,121 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<h6 class="special-heading text-center">
-						“To be a trusted market leader in the conversion of recovered waste product to energy and byproducts through minimizing landfill and delivery of innovative solutions.”
+						“{{ visionStatement.quote }}”
 					</h6>
 					<p class="mt-4">
-						~ Vision Statement ~
+						~ {{ visionStatement.title }} ~
 					</p>
-					<p><strong>Daniel Wong,</strong> Managing Director</p>
+					<p><strong>{{ visionStatement.name }},</strong> {{ visionStatement.position }}</p>
 				</div>
 			</div>
 		</div>
 	</section>
 </template>
+
+<script>
+import axios from 'axios';
+import { nextTick } from "vue";
+
+export default {
+	data() {
+		return {
+			singleSliders: {},
+			heroSliders: [],
+			highlightServices: [],
+			missionStatement: {},
+			pageBanner: {},
+			infinity: {},
+			WMS: {},
+			eWMS: {},
+			visionStatement: {},
+		}
+	},
+	mounted() {
+    this.fetchData();
+  },
+	methods: {
+		async fetchData() {
+			try {
+				console.log('fetching data')
+				const BASE_URL = 'https://cms.cic.lodemo.id';
+				const response = await axios.get(`${BASE_URL}/api/home?pLevel`);
+				const data = response.data?.data
+
+				if (data) {
+          this.heroSliders = data.section_1 || [];
+          this.highlightServices = data.section_2 || [];
+          this.missionStatement = data.section_3 || {};
+          this.pageBanner = data.section_4 || {};
+          this.infinity = data.section_5 || {};
+          this.WMS = data.section_6 || {};
+          this.eWMS = data.section_7 || {};
+					this.visionStatement = data.section_8 || {};
+        } else {
+          console.warn('No data received');
+        }
+				await nextTick();
+				this.initFlexslider();
+			} catch (error) {
+				console.log(error)
+			}
+		},
+    initFlexslider() {
+			setTimeout(() => {
+				console.log('Initializing flexslider');
+				
+				$(".flexslider").flexslider({
+					animation: "fade",  // 'fade' animation for slide transition
+					pauseOnHover: false,
+					useCSS: true,
+					controlNav: true,    // Enable control navigation (dots)
+					directionNav: true,  // Enable direction navigation (prev/next)
+					prevText: "",
+					nextText: "",
+					smoothHeight: false,
+					slideshowSpeed: 5000,	     // Automatic sliding every 7 seconds
+					animationSpeed: 600,     // Animation speed for sliding transition
+					animationLoop: true,     // Keep the slider in a loop
+
+					// Start function that hides text layers until the slide is active
+					start: function (slider) {
+						slider.find('.intro_layers').children().css({ visibility: 'hidden' });
+						slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
+							var self = $(this);
+							setTimeout(() => self.addClass("animated scaleAppear"), index * 250);
+						});
+					},
+					
+					// When the slide changes, ensure the text reappears
+					before: function(slider) {
+						slider.find('.intro_layers').children().css({ visibility: 'hidden' });
+					},
+					
+					// After the slide changes, display the text again
+					after: function(slider) {
+						slider.find('.flex-active-slide .intro_layers').children().each(function (index) {
+							var self = $(this);
+							setTimeout(() => self.addClass("animated scaleAppear"), index * 250);
+						});
+					},
+
+					// End function that hides the text layers when the animation ends
+					end: function (slider) {
+						slider.find('.intro_layers').children().each(function () {
+							var self = $(this);
+							var animationClass = !self.data('animation') ? 'scaleAppear' : self.data('animation');
+							self.removeClass('animated ' + animationClass).css({ visibility: 'hidden' });
+						});
+					}
+				});
+
+			}, 500); // Delay the initialization to ensure the DOM is ready
+		},
+    updateSliderNav(slider) {
+      const current = $('li:has(.flex-active)').index('.flex-control-nav li') + 1;
+      const length = $('.slides li').length;
+      $('.flex-control-nav li a.flex-active').html(`<span class="span-active">${current}/${length}</span>`);
+    }
+	}
+}
+</script>

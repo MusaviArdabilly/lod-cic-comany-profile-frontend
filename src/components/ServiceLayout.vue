@@ -19,25 +19,25 @@
 					<div class="divider-30 hidden-above-lg"></div>
           <!-- <div class="divider-60 hidden-below-lg"></div> -->
 				</div>
-        <div v-if="service.mode === 2 || service.mode === 3" class="col-lg-6 col-12 col-xl-5 offset-xl-1">
+        <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="col-lg-6 col-12 col-xl-5 offset-xl-1">
           <img class="rounded" src="/assets/images/services/service-single2.jpg" alt="">
         </div>
-        <div v-if="service.mode === 2 || service.mode === 3" class="col-lg-6 col-12 col-xl-5">
+        <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="col-lg-6 col-12 col-xl-5">
           <div class="divider-30 hidden-above-lg"></div>
 
-          <div v-if="service.mode === 2"
+          <div v-if="service.mode_service?.name === '2'"
             v-for="list in service.data?.list" class="mb-3">
             <p class="font-weight-bold mb-1">
               {{ list.title }}
             </p>
             <ul class="list-styled mt-1">
               <li v-for="(item, index) in list.items" :key="index">
-                {{ item }}
+                {{ item.title }}
               </li>
             </ul>
           </div>
 
-          <div v-if="service.mode === 3"
+          <div v-if="service.mode_service?.name === '3'"
             v-for="list in service.data?.list" class="mb-3">
             <p class="font-weight-bold mb-1">
               {{ list.title }}
@@ -73,10 +73,6 @@
 <script>
   export default {
     props: {
-      mode: {
-        type: Number,
-        required: true
-      },
       service: {
         type: Object,
         required: true

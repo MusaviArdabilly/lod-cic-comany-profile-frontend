@@ -312,9 +312,9 @@
 				</div>
 				<div class="d-flex justify-content-center pt-5 mb-2">
 					<div class="bg-secondary text-center py-3 px-5">
-						<h5 style="font-size: 1rem;">Disclaimer</h5>
+						<h5 style="font-size: 1rem;">{{ disclaimer.title }}</h5>
 						<p style="font-size: 0.75rem;">
-							THE INFORMATION CONTAINED IN THIS WEBSITE IS FOR GENERAL INFORMATION PURPOSES ONLY, WHILE WE TAKE ALL REASONABLE ENDEAVOURS TO KEEP THE INFORMATION UPDATED AND CORRECT, WE MAKE NO REPRESENTATIONS AND GRANT NO WARRANTIES, EXPRESS OR IMPLIED, EITHER IN FACT OR BY OPERATION OF LAW, BY STATUTE OR OTHERWISE, UNDER THIS WEBSITE, AND WE SPECIFICALLY DISCLAIM ANY OTHER WARRANTY, WHETHER WRITTEN OR ORAL, OR EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF QUALITY, MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE OR PURPOSE OR ANY WARRANTY AS TO THE COMPLETENESS, ACCURACY, RELIABILITY, SUITABILITY OR AVAILABILITY WITH RESPECT TO THE WEBSITE OR THE INFORMATION, PRODUCTS, SERVICES OR RELATED GRAPHICS CONTAINED ON THE WEBSITE FOR ANY PURPOSE WHATSOEVER.
+							{{ disclaimer.text }}
 						</p>
 					</div>
 				</div>
@@ -325,3 +325,51 @@
 		</div>
 	</div>
 </template>
+
+<script>
+import axios from 'axios';
+
+export default {
+	data() {
+		return {
+			disclaimer: {
+				title: '',
+				text: ''
+			},
+			footer: ''
+		}
+	},
+	created() {
+		this.fetchData();
+	},
+	methods: {
+		async fetchData() {
+			try {
+				const BASE_URL = 'https://cms.cic.lodemo.id';
+
+
+				const disclaimer = axios.get(`${BASE_URL}/api/disclaimer`);
+				const footer = axios.get(`${BASE_URL}/api/footer`);
+
+				const [responseDisclaimer, responseFooter] = await Promise.allSettled([disclaimer, footer]);
+
+				const dataDisclaimer = responseDisclaimer.value.data.data;
+				const dataFooter = responseFooter.value.data.data;
+
+				if (dataDisclaimer) {
+					this.disclaimer.title = dataDisclaimer.title;
+					this.disclaimer.text = dataDisclaimer.description;
+				}
+				
+				if (dataFooter) {
+					this.footer = dataFooter.description
+				}
+
+				console.log(data)
+			} catch (error) {
+				console.warn(error)
+			}
+		}
+	}
+}
+</script>

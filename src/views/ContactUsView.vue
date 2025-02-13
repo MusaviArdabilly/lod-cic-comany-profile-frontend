@@ -20,8 +20,7 @@
               <h6 class="">
                 Our Address
               </h6>
-              <p class="">Lot 5169, Simpang 144, Jalan Maulana <br>
-                Kuala Belait, KA1531, Brunei Darussalam</p>
+              <p class="">{{ contact.address }}</p>
             </div>
           </div>
         </div>
@@ -34,7 +33,7 @@
               <h6 class="">
                 Our Number
               </h6>
-              <p class="">+673 3330266 / 0267</p>
+              <p class="">{{ contact.phone }}</p>
             </div>
           </div>
         </div>
@@ -47,7 +46,7 @@
               <h6 class="">
                 Our Email
               </h6>
-              <p class="">cicenquiry@cicgrp.com</p>
+              <p class="">{{ contact.email }}</p>
             </div>
           </div>
         </div>
@@ -60,7 +59,7 @@
               <h6 class="">
                 Opening time
               </h6>
-              <p class="">Mo-Fri: 07.30am - 4.30pm <br> Sat-Sun: Off</p>
+              <p class="">{{ contact.time }}</p>
             </div>
           </div>
         </div>
@@ -147,3 +146,35 @@
     </div>
   </section>
 </template>
+
+<script>
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      contact: {}
+    }
+  },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      try {
+        const BASE_URL = 'https://cms.cic.lodemo.id';
+        const response = await axios.get(`${BASE_URL}/api/contact?pLevel`);
+        const data = response.data.data;
+        
+        if (data) {
+          this.contact = data;
+        } else {
+          console.warn('No data available')
+        }
+      }
+      catch (error) {
+        console.warn(error)
+      }
+    }
+  }
+}
+</script>
