@@ -26964,7 +26964,7 @@ a img.aligncenter {
 }
 
 .page_header.ds.affix {
-	background: #09445a !important;
+	/* background: #09445a !important; */
 }
 
 .page_header.ls.affix {

@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-12">
           <div class="media text-center text-sm-left">
-            <div class="icon-styled fs-60 color-main">
+            <div class="icon-styled fs-40 color-main">
               <i class="ico ico-location"></i>
             </div>
             <div class="media-body">
@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-12">
           <div class="media text-center text-sm-left">
-            <div class="icon-styled fs-60 color-main">
+            <div class="icon-styled fs-40 color-main">
               <i class="ico ico-call"></i>
             </div>
             <div class="media-body">
@@ -39,7 +39,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-12">
           <div class="media text-center text-sm-left">
-            <div class="icon-styled fs-60 color-main">
+            <div class="icon-styled fs-40 color-main">
               <i class="ico ico-email"></i>
             </div>
             <div class="media-body">
@@ -52,7 +52,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-12">
           <div class="media text-center text-sm-left">
-            <div class="icon-styled fs-60 color-main">
+            <div class="icon-styled fs-40 color-main">
               <i class="ico ico-pipe"></i>
             </div>
             <div class="media-body">

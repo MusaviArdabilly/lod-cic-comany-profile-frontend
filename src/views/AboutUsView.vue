@@ -143,7 +143,8 @@
 		</div>
 	</section>
 
-	<section class="ls ms portfolio text-center s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-280 s-pb-lg-250 s-pb-md-90 s-pb-60"
+	<section v-if="section7" 
+		class="ls ms portfolio text-center s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-280 s-pb-lg-250 s-pb-md-90 s-pb-60"
 		style="min-height: max-content; height: 1320px; overflow: scroll;"
 		>
 		<div class="container py-5">

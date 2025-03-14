@@ -167,7 +167,7 @@
 										</li>
 
 										<li class="active">
-											<a href="#">Solution & Services</a>
+											<a href="#">Services</a>
 											<ul>
 												<li>
 													<a href="/services/collection-and-transportation">Collection & Transportation</a>
@@ -291,9 +291,8 @@
 											<i class="fas fa-map-marker-alt"></i>
 										</div>
 										<p>
-											CIC Environmental Services <br>
-											Lot 5169, Simpang 144, Jalan Maulana <br>
-											Kuala Belait, KA1531, Brunei Darussalam <br>
+											CIC Environmental Services Lot 5169, Simpang 144, <br> 
+											Jalan Maulana Kuala Belait, KA1531, <br> Brunei Darussalam
 										</p>
 									</li>
 									<li class="icon-inline">
@@ -301,7 +300,7 @@
 											<i class="fas fa-clock"></i>
 										</div>
 										<p>
-											Mo-Fri: 07.30am - 4.30pm<br>
+											Mon-Fri: 07.30am - 04.30pm<br>
 											Sat-Sun: Off<br>
 										</p>
 									</li>

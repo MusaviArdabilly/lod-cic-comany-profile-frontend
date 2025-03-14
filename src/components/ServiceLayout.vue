@@ -18,51 +18,48 @@
 					</p>
 					<div class="divider-30 hidden-above-lg"></div>
           <!-- <div class="divider-60 hidden-below-lg"></div> -->
-				</div>
-        <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="col-lg-6 col-12 col-xl-5 offset-xl-1">
-          <img class="rounded" src="/assets/images/services/service-single2.jpg" alt="">
-        </div>
-        <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="col-lg-6 col-12 col-xl-5">
-          <div class="divider-30 hidden-above-lg"></div>
-
-          <div v-if="service.mode_service?.name === '2'"
-            v-for="list in service.data?.list" class="mb-3">
-            <p class="font-weight-bold mb-1">
-              {{ list.title }}
-            </p>
-            <ul class="list-styled mt-1">
-              <li v-for="(item, index) in list.items" :key="index">
-                {{ item.title }}
-              </li>
-            </ul>
-          </div>
-
-          <div v-if="service.mode_service?.name === '3'"
-            v-for="list in service.data?.list" class="mb-3">
-            <p class="font-weight-bold mb-1">
-              {{ list.title }}
-            </p>
-            <ul class="list-styled mt-1">
-              <li v-for="(item, index) in list.items" :key="index">
-                <p class="mb-2">
+          <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="">
+            <div class="divider-30 hidden-above-lg"></div>
+  
+            <div v-if="service.mode_service?.name === '2'"
+              v-for="list in service.data?.list" class="mb-3">
+              <p class="font-weight-bold mb-1">
+                {{ list.title }}
+              </p>
+              <ul class="list-styled mt-1">
+                <li v-for="(item, index) in list.items" :key="index">
                   {{ item.title }}
-                </p>
-                <p class="font-weight-normal">
-                  <small>
-                    {{ item.detail }}
-                  </small>
-                </p>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
+  
+            <div v-if="service.mode_service?.name === '3'"
+              v-for="list in service.data?.list" class="mb-3">
+              <p class="font-weight-bold mb-1">
+                {{ list.title }}
+              </p>
+              <ul class="list-styled mt-1">
+                <li v-for="(item, index) in list.items" :key="index">
+                  <p class="mb-2">
+                    {{ item.title }}
+                  </p>
+                  <p class="font-weight-normal">
+                    <small>
+                      {{ item.detail }}
+                    </small>
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+				</div>
 				
 				<div class="col-12 col-xl-10 offset-xl-1 mt-4">
 					<p>{{ service.data?.footer }}</p>
 				</div>
 
 				<div class="text-center mx-auto mt-5">
-					<a :href="service.data?.brocure" target="_blank"
+					<a :href="`https://cms.cic.lodemo.id${service.data?.brocure.url}`" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brocure</a>
 				</div>
 			</div>

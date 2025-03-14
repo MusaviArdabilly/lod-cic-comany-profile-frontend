@@ -1,5 +1,13 @@
+.nav {
+  text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
 .bg-navbar {
-	background: #0437498f !important;
+	/* background: #0437498f !important; */
 }
 
 .affix-top-wrapper {
