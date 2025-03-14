@@ -168,7 +168,7 @@
 
 										<li class="active">
 											<a href="#">Services</a>
-											<ul>
+											<ul class="no-stroke">
 												<li>
 													<a href="/services/collection-and-transportation">Collection & Transportation</a>
 												</li>

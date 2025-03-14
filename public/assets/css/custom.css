@@ -6,6 +6,10 @@
      1px  1px 0 black;
 }
 
+.no-stroke {
+  text-shadow: none;
+}
+
 .bg-navbar {
 	/* background: #0437498f !important; */
 }
