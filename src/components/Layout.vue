@@ -170,55 +170,57 @@
 											<a href="#">Services</a>
 											<ul class="no-stroke">
 												<li>
-													<a href="/services/collection-and-transportation">Collection & Transportation</a>
-												</li>
-												<li>
-													<a href="/services/laboratory">Laboratory Services</a>
-												</li>
-												<li>
-													<a href="/services/water-waste-treatment">Water Waste Treatment</a>
-												</li>
-												<li>
-													<a href="/services/oily-waste-recovery">Oily Waste Recovery</a>
-												</li>
-												<li>
-													<a href="/services/incineration-treatment">Incineration Treatment</a>
-												</li>
-												<li>
-													<a href="/services/oil-and-gas">Oil & Gas Services</a>
-												</li>
-												<li>
-													<a href="/services/cic-mercury-treatment-system">CIC Mercury Treatment System</a>
-												</li>
-												<li>
-													<a href="/services/thermomechanical-cutting-cleaner">TCC</a>
-												</li>
-												<li>
-													<a href="/services/oil-spill-remediation">Oil Spill Remediation</a>
-												</li>
-												<li>
-													<a href="/services/engineering-solution-for-crane-services">Engineering Solution for Crane Services</a>
-												</li>
-												<li>
-													<a href="/services/equipment-rental">Equipment Rental</a>
-												</li>
-												<li>
-													<a href="/services/marine">Marine Services</a>
-												</li>
-												<li>
-													<a href="/services/vapor-blasting">Vapor Blasting</a>
-												</li>
-												<li class="">
-													<a href="#" class="sf-with-ul">Industrial Cleaning & Mechanical Services</a><span class="sf-menu-item-mobile-toggler"></span>
+													<a href="#" class="sf-with-ul">CIC ES</a><span class="sf-menu-item-mobile-toggler"></span>
 													<ul style="display: none; margin-top: 10px; left: 100%;">
 														<li>
-															<a href="/services/industrial-cleaning-and-mechanical">Industrial Cleaning & Mechanical Services</a>
+															<a href="/services/collection-and-transportation">Collection & Transportation</a>
+														</li>
+														<li>
+															<a href="/services/laboratory">Laboratory Services</a>
+														</li>
+														<li>
+															<a href="/services/water-waste-treatment">Water Waste Treatment</a>
+														</li>
+														<li>
+															<a href="/services/oily-waste-recovery">Oily Waste Recovery</a>
+														</li>
+														<li>
+															<a href="/services/incineration-treatment">Incineration Treatment</a>
+														</li>
+														<li>
+															<a href="/services/oil-and-gas">Oil & Gas Services</a>
+														</li>
+														<li>
+															<a href="/services/cic-mercury-treatment-system">CIC Mercury Treatment System</a>
+														</li>
+														<li>
+															<a href="/services/thermomechanical-cutting-cleaner">TCC</a>
+														</li>
+														<li>
+															<a href="/services/oil-spill-remediation">Oil Spill Remediation</a>
+														</li>
+														<li>
+															<a href="/services/equipment-rental">Equipment Rental</a>
+														</li>
+														<li>
+															<a href="/services/marine">Marine Services</a>
+														</li>
+														<li>
+															<a href="/services/vapor-blasting">Vapor Blasting</a>
 														</li>
 														<li>
 															<a href="/services/drum-and-ibc-processing">Drum & IBC Processing</a>
 														</li>
 														<li>
 															<a href="/services/tank-cleaning">Tank Cleaning</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="sf-with-ul">CIC ES</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 10px; left: 100%;">
+														<li>
+															<a href="/services/industrial-cleaning-and-mechanical">Industrial Cleaning & Mechanical Services</a>
 														</li>
 													</ul>
 												</li>
@@ -291,7 +293,8 @@
 											<i class="fas fa-map-marker-alt"></i>
 										</div>
 										<p>
-											CIC Environmental Services Lot 5169, Simpang 144, <br> 
+											CIC Environmental Services <br> 
+											Lot 5169, Simpang 144, <br> 
 											Jalan Maulana Kuala Belait, KA1531, <br> Brunei Darussalam
 										</p>
 									</li>

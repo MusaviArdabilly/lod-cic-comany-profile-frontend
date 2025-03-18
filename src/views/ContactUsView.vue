@@ -20,7 +20,7 @@
               <h6 class="">
                 Our Address
               </h6>
-              <p class="">{{ contact.address }}</p>
+              <p class="fs-14" style="white-space: pre-line;">{{ contact.address }}</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
               <h6 class="">
                 Our Number
               </h6>
-              <p class="">{{ contact.phone }}</p>
+              <p class="fs-14" style="white-space: pre-line;">{{ contact.phone }}</p>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
               <h6 class="">
                 Our Email
               </h6>
-              <p class="">{{ contact.email }}</p>
+              <p class="fs-14" style="white-space: pre-line;">{{ contact.email }}</p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <h6 class="">
                 Opening time
               </h6>
-              <p class="">{{ contact.time }}</p>
+              <p class="fs-14" style="white-space: pre-line;">{{ contact.time }}</p>
             </div>
           </div>
         </div>
