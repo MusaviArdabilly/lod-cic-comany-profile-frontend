@@ -6,8 +6,7 @@
 
 <script>
   import ServiceLayout from '@/components/ServiceLayout.vue';
-
-  // import { services } from '@/mocks/service';
+  
   import axios from 'axios';
 
   export default {
@@ -18,17 +17,9 @@
       } 
     },
     mounted() {
-      // this.bindData();
       this.fetchData();
     },
-    watch: {
-      // '$route.params.serviceName': 'bindData'
-    },
     methods: {
-      // bindData() {
-      //   const selectedService = services.find(item => item.path === this.$route.params.serviceName);
-      //   this.data = {...selectedService}
-      // }
       async fetchData() {
         try {
           const servicePath = this.$route.params.serviceName;

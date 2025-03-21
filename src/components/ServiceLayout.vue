@@ -4,7 +4,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-xl-10 offset-xl-1">
-					<!-- <img class="rounded" :src="service.data?.image" alt=""> -->
 					<div class="divider-60 hidden-below-lg"></div>
 					<div class="divider-30 hidden-above-lg"></div>
 					<h2 class="special-heading text-sm-left text-center">
@@ -17,7 +16,6 @@
 						{{ service.data?.description }}
 					</p>
 					<div class="divider-30 hidden-above-lg"></div>
-          <!-- <div class="divider-60 hidden-below-lg"></div> -->
           <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="">
             <div class="divider-30 hidden-above-lg"></div>
   
