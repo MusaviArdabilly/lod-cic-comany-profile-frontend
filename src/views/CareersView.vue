@@ -171,7 +171,7 @@ export default {
 	},
   methods: {
 		async fetchData() {
-			const BASE_URL = 'https://cms.cic.lodemo.id';
+			const BASE_URL = 'https://cms.lod-cic.id';
 			const response = await axios.get(`${BASE_URL}/api/career?pLevel`);
 			const data = response.data.data;
 
@@ -197,7 +197,7 @@ export default {
     },
 		async submitForm() {
 			try {
-				const BASE_URL = 'https://cms.cic.lodemo.id';
+				const BASE_URL = 'https://cms.lod-cic.id';
 				const formData = {
 					data: {
 						email: this.form.email,

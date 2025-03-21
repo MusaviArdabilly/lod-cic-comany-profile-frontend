@@ -169,7 +169,7 @@ export default {
 		async fetchData() {
 			try {
 				console.log('fetching data')
-				const BASE_URL = 'https://cms.cic.lodemo.id';
+				const BASE_URL = 'https://cms.lod-cic.id';
 				const response = await axios.get(`${BASE_URL}/api/home?pLevel`);
 				const data = response.data?.data
 

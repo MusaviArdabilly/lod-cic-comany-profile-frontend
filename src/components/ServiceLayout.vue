@@ -56,7 +56,7 @@
 					<p>{{ service.data?.footer }}</p>
 				</div>
 
-				<div class="text-center mx-auto mt-5">
+				<div v-if="service.data?.brocure?.url" class="text-center mx-auto mt-5">
 					<a :href="`https://cms.cic.lodemo.id${service.data?.brocure.url}`" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brocure</a>
 				</div>

@@ -377,7 +377,7 @@ export default {
 	methods: {
 		async fetchData() {
 			try {
-				const BASE_URL = 'https://cms.cic.lodemo.id';
+				const BASE_URL = 'https://cms.lod-cic.id';
 
 
 				const disclaimer = axios.get(`${BASE_URL}/api/disclaimer`);

@@ -161,7 +161,7 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const BASE_URL = 'https://cms.cic.lodemo.id';
+        const BASE_URL = 'https://cms.lod-cic.id';
         const response = await axios.get(`${BASE_URL}/api/contact?pLevel`);
         const data = response.data.data;
         

@@ -6,7 +6,7 @@
 
 <script>
   import ServiceLayout from '@/components/ServiceLayout.vue';
-  
+
   import axios from 'axios';
 
   export default {
@@ -23,7 +23,7 @@
       async fetchData() {
         try {
           const servicePath = this.$route.params.serviceName;
-          const BASE_URL = 'https://cms.cic.lodemo.id';
+          const BASE_URL = 'https://cms.lod-cic.id';
           const response = await axios.get(`${BASE_URL}/api/service-2s?pLevel&filters[path][$contains]=${servicePath}`);
   
           const data = response.data.data[0];
