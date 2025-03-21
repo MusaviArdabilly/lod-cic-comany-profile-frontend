@@ -162,16 +162,16 @@
 									<ul class="nav sf-menu">
 
 										<li class="active">
-											<a href="/about-us">About Us</a>
+											<a href="/about-us" class="stroke">About Us</a>
                       <!-- <a href="/about-us">About Us</a> -->
 										</li>
 
 										<li class="active">
-											<a href="#">Services</a>
-											<ul class="no-stroke">
+											<a href="#" class="stroke">Services</a>
+											<ul class="nav-children" style="color: #000 !important;">
 												<li>
 													<a href="#" class="sf-with-ul">CIC ES</a><span class="sf-menu-item-mobile-toggler"></span>
-													<ul style="display: none; margin-top: 10px; left: 100%;">
+													<ul style="display: none; top: -20px;">
 														<li>
 															<a href="/services/collection-and-transportation">Collection & Transportation</a>
 														</li>
@@ -214,13 +214,45 @@
 														<li>
 															<a href="/services/tank-cleaning">Tank Cleaning</a>
 														</li>
+														<li>
+															<a href="/services/industrial-cleaning-and-mechanical">Industrial Cleaning & Mechanical Services</a>
+														</li>
 													</ul>
 												</li>
 												<li>
-													<a href="#" class="sf-with-ul">CIC ES</a><span class="sf-menu-item-mobile-toggler"></span>
-													<ul style="display: none; margin-top: 10px; left: 100%;">
+													<a href="#" class="sf-with-ul">CIC ISB</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; top: -20px;">
+														<li style="visibility: hidden; height: 1px;">
+															<a href="#">Industrial Cleaning & Mechanical Services</a>
+														</li>
 														<li>
-															<a href="/services/industrial-cleaning-and-mechanical">Industrial Cleaning & Mechanical Services</a>
+															<a href="#">Coming Soon</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#" class="sf-with-ul">CIC Engineering</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; top: -20px;">
+														<li style="visibility: hidden; height: 1px;">
+															<a href="#">Industrial Cleaning & Mechanical Services</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Scaffolding Services</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Plant Maintenance and Turnaround</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Tank Construction & Maintenance</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Mechanical Services</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Civil & Building</a>
+														</li>
+														<li>
+															<a href="/services/scaffolding-services">Electrical & Instrumentation</a>
 														</li>
 													</ul>
 												</li>
@@ -228,13 +260,11 @@
 										</li>
 
 										<li class="active">
-											<a href="/careers">Careers</a>
-											<!-- <a href="/careers">Careers</a> -->
+											<a href="/careers" class="stroke">Careers</a>
 										</li>
 
 										<li class="active">
-											<a href="/contact-us">Contact Us</a>
-											<!-- <a href="/contact-us">Contact Us</a> -->
+											<a href="/contact-us" class="stroke">Contact Us</a>
 										</li>
 										<!-- eof pages -->
                   </ul>
