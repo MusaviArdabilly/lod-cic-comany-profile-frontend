@@ -325,7 +325,9 @@
 										<p>
 											CIC Environmental Services <br> 
 											Lot 5169, Simpang 144, <br> 
-											Jalan Maulana Kuala Belait, KA1531, <br> Brunei Darussalam
+											Jalan Maulana, Kuala Belait, <br>
+											KA1531, <br> 
+											Brunei Darussalam
 										</p>
 									</li>
 									<li class="icon-inline">
