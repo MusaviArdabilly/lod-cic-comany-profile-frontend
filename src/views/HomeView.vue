@@ -1,15 +1,14 @@
 <template>
-	<!-- <img :src="`https://cms.cic.lodemo.id${singleSliders?.image?.formats?.large?.url}`" alt="asd"> -->
 	<section class="page_slider">
 		<div class="flexslider">
 			<ul class="slides">
 				<li v-if="heroSliders" v-for="(slider, index) in heroSliders" :key="index" class="ds cover-image"
 						:style="{
-						backgroundImage: `url('https://cms.cic.lodemo.id${slider?.image?.formats?.large?.url}')`,
+						backgroundImage: `url('${API_BASE_URL}${slider?.image?.data.attributes.url}')`,
 						backgroundSize: 'cover',
-						backgroundPosition: 'center'
+						backgroundPosition: 'center',
 					}">
-					<img :src="`https://cms.cic.lodemo.id${slider?.image?.formats?.large?.url}`" :alt="slider.title">
+					<img :src="`${API_BASE_URL}${slider?.image?.data.attributes.url}`" :alt="slider.title">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-12">
@@ -73,9 +72,9 @@
 	<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
 		<div class="cover-image s-cover-right" 
 			:style="{
-				backgroundImage: `url('https://cms.cic.lodemo.id${pageBanner?.image?.url}')`
+				backgroundImage: `url('${API_BASE_URL}${pageBanner?.image?.data.attributes.url}')`
 			}">
-			<img :src="`https://cms.cic.lodemo.id${pageBanner?.image?.url}`" alt="01">
+			<img :src="`${API_BASE_URL}${pageBanner?.image?.data.attributes.url}`" alt="01">
 		</div>
 
 		<div class="container-fluid">
@@ -101,14 +100,14 @@
 	</section>
 
 	<section class="s-overlay infinity-section s-py-60 text-center px-3">
-		<img :src="`https://cms.cic.lodemo.id${infinity?.image?.url}`" alt="">
+		<img :src="`${API_BASE_URL}${infinity?.image?.data.attributes.url}`" alt="">
 		<h2>{{ WMS.title }}</h2>
 		<div class="container wms-card-container mb-5 p-0">
 			<div class="row gap-1">
 				<div v-for="(service, index) in WMS.section_6a" :key="index" 
 					class="col-6 col-md-3 mb-3">
 					<div class="wms-card">
-						<img :src="`https://cms.cic.lodemo.id${service?.image.url}`" alt="">
+						<img :src="`${API_BASE_URL}${service?.image?.data.attributes.url}`" alt="">
 						<h6>{{ service?.title }}</h6>
 					</div>
 				</div>
@@ -151,6 +150,7 @@ import { nextTick } from "vue";
 export default {
 	data() {
 		return {
+			API_BASE_URL: import.meta.env.VITE_BACKEND_BASE_URL,
 			singleSliders: {},
 			heroSliders: [],
 			highlightServices: [],
@@ -169,9 +169,8 @@ export default {
 		async fetchData() {
 			try {
 				console.log('fetching data')
-				const BASE_URL = 'https://cms.lod-cic.id';
-				const response = await axios.get(`${BASE_URL}/api/home?pLevel`);
-				const data = response.data?.data
+				const response = await axios.get(`${this.API_BASE_URL}/api/home?populate=deep,10`);
+				const data = response.data?.data.attributes;
 
 				if (data) {
           this.heroSliders = data.section_1 || [];

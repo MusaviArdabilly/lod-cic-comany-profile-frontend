@@ -194,9 +194,6 @@
 															<a href="/services/cic-mercury-treatment-system">CIC Mercury Treatment System</a>
 														</li>
 														<li>
-															<a href="/services/thermomechanical-cutting-cleaner">TCC</a>
-														</li>
-														<li>
 															<a href="/services/oil-spill-remediation">Oil Spill Remediation</a>
 														</li>
 														<li>
@@ -379,7 +376,7 @@ export default {
 	methods: {
 		async fetchData() {
 			try {
-				const BASE_URL = 'https://cms.lod-cic.id';
+				const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL;
 
 
 				const disclaimer = axios.get(`${BASE_URL}/api/disclaimer`);
@@ -387,8 +384,8 @@ export default {
 
 				const [responseDisclaimer, responseFooter] = await Promise.allSettled([disclaimer, footer]);
 
-				const dataDisclaimer = responseDisclaimer.value.data.data;
-				const dataFooter = responseFooter.value.data.data;
+				const dataDisclaimer = responseDisclaimer.value.data.data.attributes;
+				const dataFooter = responseFooter.value.data.data.attributes;
 
 				if (dataDisclaimer) {
 					this.disclaimer.title = dataDisclaimer.title;

@@ -16,10 +16,10 @@
 						{{ service.data?.description }}
 					</p>
 					<div class="divider-30 hidden-above-lg"></div>
-          <div v-if="service.mode_service?.name === '2' || service.mode_service?.name === '3'" class="">
+          <div v-if="service.mode_service?.data.attributes.name === '2' || service.mode_service?.data.attributes.name === '3'" class="">
             <div class="divider-30 hidden-above-lg"></div>
   
-            <div v-if="service.mode_service?.name === '2'"
+            <div v-if="service.mode_service?.data.attributes.name === '2'"
               v-for="list in service.data?.list" class="mb-3">
               <p class="font-weight-bold mb-1">
                 {{ list.title }}
@@ -31,7 +31,7 @@
               </ul>
             </div>
   
-            <div v-if="service.mode_service?.name === '3'"
+            <div v-if="service.mode_service?.data.attributes.name === '3'"
               v-for="list in service.data?.list" class="mb-3">
               <p class="font-weight-bold mb-1">
                 {{ list.title }}
@@ -57,7 +57,7 @@
 				</div>
 
 				<div v-if="service.data?.brocure?.url" class="text-center mx-auto mt-5">
-					<a :href="`https://cms.cic.lodemo.id${service.data?.brocure.url}`" target="_blank"
+					<a :href="apiBaseUrl + `${service.data?.brocure.url}`" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brochure</a>
 				</div>
 			</div>
@@ -70,6 +70,10 @@
     props: {
       service: {
         type: Object,
+        required: true
+      },
+      apiBaseUrl: {
+        type: String,
         required: true
       }
     },

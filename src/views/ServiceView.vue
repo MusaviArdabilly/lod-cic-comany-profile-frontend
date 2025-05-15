@@ -1,6 +1,7 @@
 <template>
   <ServiceLayout
     :service="data" >
+    :apiBaseUrl="API_BASE_URL"
   </ServiceLayout>
 </template>
 
@@ -13,6 +14,7 @@
     components: { ServiceLayout },
     data() {
       return {
+			  API_BASE_URL: import.meta.env.VITE_BACKEND_BASE_URL,
         data: {}
       } 
     },
@@ -23,10 +25,9 @@
       async fetchData() {
         try {
           const servicePath = this.$route.params.serviceName;
-          const BASE_URL = 'https://cms.lod-cic.id';
-          const response = await axios.get(`${BASE_URL}/api/service-2s?pLevel&filters[path][$contains]=${servicePath}`);
+          const response = await axios.get(`${this.API_BASE_URL}/api/services?filters[path][$contains]=${servicePath}&populate=deep,10`);
   
-          const data = response.data.data[0];
+          const data = response.data.data[0].attributes;
 
           console.log('data', data)
   

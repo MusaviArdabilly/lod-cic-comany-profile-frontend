@@ -37,7 +37,7 @@
 							class="col-xl-4 col-sm-6 business news" >
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img :src="`https://cms.cic.lodemo.id${item.image.url}`" alt="img">
+									<img :src="API_BASE_URL + `${item.image.data.attributes.url}`" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										{{ item.title }}
 									</h6>
@@ -152,6 +152,7 @@ import { errorMessages } from 'vue/compiler-sfc';
 export default {
   data() {
     return {
+			API_BASE_URL: import.meta.env.VITE_BACKEND_BASE_URL,
       error: null,
       maxSize: 10 * 1024 * 1024,
 			section1: {},
@@ -171,9 +172,8 @@ export default {
 	},
   methods: {
 		async fetchData() {
-			const BASE_URL = 'https://cms.lod-cic.id';
-			const response = await axios.get(`${BASE_URL}/api/career?pLevel`);
-			const data = response.data.data;
+			const response = await axios.get(`${this.API_BASE_URL}/api/career?populate=deep,10`);
+			const data = response.data.data.attributes;
 
 			if (data) {
 				this.section1 = data.section_1;
@@ -197,9 +197,9 @@ export default {
     },
 		async submitForm() {
 			try {
-				const BASE_URL = 'https://cms.lod-cic.id';
 				const formData = {
 					data: {
+						name: this.form.name,
 						email: this.form.email,
 						phone: this.form.phoneNumber,
 						position: this.form.subject,
@@ -207,7 +207,7 @@ export default {
 					}
 				}
 				
-				const formResponse = await axios.post(`${BASE_URL}/api/cv-submissions`, formData);
+				const formResponse = await axios.post(`${this.API_BASE_URL}/api/cv-submissions`, formData);
 				const submissionId = formResponse.data.data.id;
 
 				if (this.form.cv) {
@@ -217,7 +217,7 @@ export default {
 					fileData.append('field', 'file');
 					fileData.append('files', this.form.cv);
 
-					await axios.post(`${BASE_URL}/api/upload`, fileData)
+					await axios.post(`${this.API_BASE_URL}/api/upload`, fileData)
 				}
 			} catch (error) {
 				console.log(error)

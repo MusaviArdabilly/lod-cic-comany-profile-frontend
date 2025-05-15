@@ -64,17 +64,17 @@
 				class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="pricing-plan box-shadow rounded">
-						<img :src="`https://cms.cic.lodemo.id${section3?.section_3b[0]?.image[0].url}`" alt="ISO Accreditation">
+						<img :src="API_BASE_URL + `${section3?.section_3b[0]?.image.data[0].attributes.url}`" alt="ISO Accreditation">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="pricing-plan plan-featured box-shadow rounded">
-						<img :src="`https://cms.cic.lodemo.id${section3?.section_3b[0]?.image[1].url}`" alt="ISO Accreditation">
+						<img :src="API_BASE_URL + `${section3?.section_3b[0]?.image.data[1].attributes.url}`" alt="ISO Accreditation">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mx-sm-auto">
 					<div class="pricing-plan box-shadow rounded">
-						<img :src="`https://cms.cic.lodemo.id${section3?.section_3b[0]?.image[2].url}`" alt="ISO Accreditation">
+						<img :src="API_BASE_URL + `${section3?.section_3b[0]?.image.data[2].attributes.url}`" alt="ISO Accreditation">
 					</div>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 					</h2>
 					<div class="divider-45 hidden-below-lg"></div>
 					<div class="divider-30 hidden-above-lg"></div>
-					<img :src="`https://cms.cic.lodemo.id${section4.image.url}`" alt="" class="w-100">
+					<img :src="API_BASE_URL + `${section4.image.data.attributes.url}`" alt="" class="w-100">
 				</div>
 			</div>
 			<div v-if="section4.section_4a"
@@ -105,7 +105,7 @@
 							class="col-xl-3 col-6  ">
 							<a href="#">
 								<div class="ls p-3 text-center rounded">
-									<img :src="`https://cms.cic.lodemo.id${item.image.url}`" alt="">
+									<img :src="API_BASE_URL + `${item.image.data.attributes.url}`" alt="">
 									<h6>{{ item.name }}</h6>
 									<p>{{ item.address }}</p>
 								</div>
@@ -121,7 +121,7 @@
 	<section class="my-5 py-5">
 		<div v-if="section5.image"
 			class="container text-center">
-			<img :src="`https://cms.cic.lodemo.id${section5.image.url}`" alt="">
+			<img :src="API_BASE_URL + `${section5.image.data.attributes.url}`" alt="">
 		</div>
 		<h2 class="text-center">{{ section6.title }}</h2>
 		<div class="row">
@@ -136,7 +136,7 @@
 				</div>
 				<div v-if="section6.brocure"
 					class="text-center">
-					<a :href="`https://cms.cic.lodemo.id${section6.brocure.url}`" target="_blank"
+					<a :href="API_BASE_URL + `${section6.brocure.data.attributes.url}`" target="_blank"
 						class="btn btn-outline-secondary mx-auto">Download Brocure</a>
 				</div>
 			</div>
@@ -156,7 +156,7 @@
 							class="col-xl-4 col-sm-6 business news" style="height: 250px;">
 							<div class="vertical-item item-gallery content-absolute text-center ds">
 								<div class="item-media card" style="transform: perspective(325px) translateZ(0px) rotateX(0deg) rotateY(0deg); transition: 0.2s linear; z-index: 1;">
-									<img :src="`https://cms.cic.lodemo.id${item.image.url}`" alt="img">
+									<img :src="API_BASE_URL + `${item.image.url}`" alt="img">
 									<h6 style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
 										{{ item.title }}
 									</h6>
@@ -246,6 +246,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
+			API_BASE_URL: import.meta.env.VITE_BACKEND_BASE_URL,
 			localStaffStrength: 0,
 			managerial: 0,
 			highlySkilled: 0,
@@ -276,9 +277,8 @@ export default {
   methods: {
 		async fetchData() {
 			try {
-				const BASE_URL = 'https://cms.lod-cic.id';
-				const response = await axios.get(`${BASE_URL}/api/about?pLevel`);
-				const data = response.data.data;
+				const response = await axios.get(`${this.API_BASE_URL}/api/about?populate=deep,10`);
+				const data = response.data.data.attributes;
 
 				if (data) {
 					this.section1 = data.section_1;
